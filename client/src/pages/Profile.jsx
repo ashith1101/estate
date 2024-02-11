@@ -123,7 +123,7 @@ export default function Profile() {
   const handleShowListings = async () => {
     try {
       setShowListingsError(false);
-      const res = await fetch(`/api/user/listings/${currentUser._id}`);
+      const res = await fetch(`/api/user/listing/${currentUser._id}`);
       const data = await res.json();
       if (data.success === false) {
         setShowListingsError(true);
@@ -186,8 +186,8 @@ export default function Profile() {
         </p>
         <input
           type='text'
-          placeholder='username'
-          defaultValue={currentUser.username}
+          placeholder='name'
+          defaultValue={currentUser.name}
           id='username'
           className='border p-3 rounded-lg'
           onChange={handleChange}
