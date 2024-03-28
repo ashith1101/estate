@@ -30,6 +30,12 @@ export default function Profile() {
   const [userListings, setUserListings] = useState([]);
   const dispatch = useDispatch();
 
+  // firebase storage
+  // allow read;
+  // allow write: if
+  // request.resource.size < 2 * 1024 * 1024 &&
+  // request.resource.contentType.matches('image/.*')
+
   useEffect(() => {
     if (file) {
       handleFileUpload(file);
@@ -188,7 +194,7 @@ export default function Profile() {
           type='text'
           placeholder='name'
           defaultValue={currentUser.name}
-          id='username'
+          id='name'
           className='border p-3 rounded-lg'
           onChange={handleChange}
         />
