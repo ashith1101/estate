@@ -2,7 +2,7 @@
 
 ## Deployed on Render
 
-[![Render](https://render.com/badge.svg)](https://prime-estate-c9jq.onrender.com/)
+[[Render]](https://prime-estate-c9jq.onrender.com/)
 This project is deployed on Render. Visit the live site at the link above!
 
 🏡 This project is a modern real estate marketplace built using the MERN stack - MongoDB, Express.js, React, and Node.js.
